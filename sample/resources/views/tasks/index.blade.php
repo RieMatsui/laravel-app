@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>To do App</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/app.css">
+  <link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body>
   <header>
