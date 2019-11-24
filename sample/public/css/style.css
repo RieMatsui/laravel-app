@@ -6,6 +6,14 @@ body {
   font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
 }
 
+.folder-button {
+  text-align: center;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
 .navbar {
   margin: 2rem 0 2.5rem 0;
 }
@@ -32,6 +40,7 @@ body {
 .my-navbar-brand:hover {
   color: #ffffff;
 }
+
 .table td:nth-child(2),
 .table td:nth-child(3),
 .table td:nth-child(4) {
@@ -39,6 +48,4 @@ body {
   width: 1px;
 }
 
-.folder-button {
-  text-align: center;
-}
+
