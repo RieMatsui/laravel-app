@@ -32,7 +32,7 @@
             <div class="list-group">
                 @foreach($folders as $folder)
                 <a href="{{ route('tasks.index', ['id' => $folder->id]) }}" 
-                  class="list-group-item list-underbar-none {{$current_folder_id === $folder->id ? 'active' : '' }}">
+                  class="list-group-item list-underbar-none {{ $current_folder_id === $folder->id ? 'active' : '' }}">
                   {{ $folder->title }}
                 </a>
               @endforeach
@@ -41,9 +41,42 @@
         </div>
 
         <div class="column col-md-8">
-          <!-- ここにタスクが表示される-->
-        </div>
 
+          <div class="card">
+            <div class="card-header">タスク</div>
+            <div class="card-body">
+              <div class="text-center">
+                <a href="#" class="btn page-link text-dark d-inline-block">
+                  タスクを追加する
+                </a>
+              </div>
+            </div>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>タイトル</th>
+                  <th>状態</th>
+                  <th>期限</th>
+                  <th></th>
+                </tr>
+              </thead>
+              
+              <tbody>
+                @foreach ($tasks as $task)
+                <tr>
+                  <td>{{ $task -> title }}</td>
+                  <td>
+                    <span class="label"> {{ $task -> status }}</span>
+                  </td>
+                  <td>{{ $task -> due_date }}</td>
+                  <td><a href="#">編集</a></td>
+                </tr>
+                @endforeach
+              </tbody>
+
+          </div>
+        </div>
       </div>
     </div>
   </main>
