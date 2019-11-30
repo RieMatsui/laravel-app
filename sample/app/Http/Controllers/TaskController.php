@@ -15,7 +15,7 @@ class TaskController extends Controller
     //get current folder
     $current_folder = Folder::find($id);
     //get task on current folder
-    $tasks = Task::where('folder_id', $current_folder->id)->get();
+    $tasks = $current_folder->tasks()->get();
 
     return view('tasks/index', [
       'folders' => $folders,

@@ -5470,7 +5470,8 @@ a.badge-success.focus {
 }
 
 .badge-info {
-  color: #212529;
+  /* color: #212529; */
+  color:#fff;
   background-color: #6cb2eb;
 }
 
