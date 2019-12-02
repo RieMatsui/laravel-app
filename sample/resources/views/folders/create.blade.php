@@ -24,11 +24,20 @@
                   フォルダを追加する
               </div>
               <div class="card-body">
+                @if ($errors -> any())
+                <div>
+                  <ul class="list-group">
+                    @foreach ($errors -> all() as $message)
+                  <li class="list-group-item list-group-item-danger">{{ $message }}</li>
+                    @endforeach
+                  </ul>
+                </div>
+                @endif
                 <form action="{{ route('folders.create')  }}" method="post">
                   @csrf
                   <div class="form-group">
                     <label for="tile">フォルダ名</label>
-                    <input type="text" class="form-control" name="title" id="title"/>
+                  <input type="text" class="form-control" name="title" id="title" value="{{ old ('title') }}"/>
                   </div>
                   <div class="text-right">
                     <button type="submit" class="btn btn-primary">送信</button>
