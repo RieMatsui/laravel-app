@@ -15,6 +15,7 @@ class FolderController extends Controller
     }
 
     public function create(CreateFolder $request)
+
     {
         // フォルモデルのインスタンスを作成する
         $folder = new Folder();
