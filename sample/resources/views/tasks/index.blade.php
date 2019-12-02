@@ -24,7 +24,7 @@
           <nav class="card">
             <div class="card-footer">フォルダ</div>
             <div class="card-body folder-button">
-              <a href="#" class="btn page-link text-dark d-inline-block">
+              <a href="{{ route('folders.create') }}" class="btn page-link text-dark d-inline-block">
                 フォルダを追加する
               </a>
             </div>
@@ -74,7 +74,6 @@
                 </tr>
                 @endforeach
               </tbody>
-
           </div>
         </div>
       </div>
