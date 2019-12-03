@@ -49,7 +49,7 @@ class CreateTask extends FormRequest
     public function messages()
     {
         return [
-            'due_date.after_or_equal' => ':attribute には今日以降の日を入力してください。',
+            'due_date.after_or_equal' => ':attribute には今日以降の日付を入力してください。',
         ];
     }
 }
