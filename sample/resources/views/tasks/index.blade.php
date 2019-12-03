@@ -28,7 +28,7 @@
           <div class="card-header">タスク</div>
           <div class="card-body">
             <div class="text-center">
-              <a href="#" class="btn page-link text-dark d-inline-block">
+            <a href="{{ route('tasks.create', ['id' => $current_folder_id]) }}" class="btn page-link text-dark d-inline-block">
                 タスクを追加する
               </a>
             </div>
@@ -49,7 +49,7 @@
               <tr>
                 <td>{{ $task -> title }}</td>
                 <td>
-                  <span class="badge {{ $task -> status_class}}"> {{ $task -> status_label }}</span>
+                  <span class="badge {{ $task -> status_class }}"> {{ $task -> status_label }}</span>
                 </td>
                 <td>{{ $task -> formatted_due_date }}</td>
                 <td><a href="#">編集</a></td>
