@@ -1,8 +1,7 @@
 @extends('layout')
 
 @section('styles')
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-  <link rel="stylesheet" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
+  @include('share.flatpickr.styles')
 @endsection
 
 @section('content')
@@ -50,7 +49,5 @@
 @endsection
 
 @section('script')
-  <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
-  <script src="https://npmcdn.com/flatpickr/dist/l10n/ja.js"></script>
-  <script src="/js/task.js"></script>
+    @include('share.flatpickr.scripts')
 @endsection
