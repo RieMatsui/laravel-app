@@ -13,7 +13,7 @@ class CreateFolderTable extends Migration
      */
     public function up()
     {
-        Schema::create('folder', function (Blueprint $table) {
+        Schema::create('folders', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title', 20);
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateFolderTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('folder');
+        Schema::dropIfExists('folders');
     }
 }
