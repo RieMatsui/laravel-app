@@ -3740,17 +3740,17 @@
     },
     {
         "name": "symfony/cache",
-        "version": "v5.0.1",
-        "version_normalized": "5.0.1.0",
+        "version": "v5.0.2",
+        "version_normalized": "5.0.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/cache.git",
-            "reference": "d8df2c5a3ba88430c559145bc8b944cb578f9d65"
+            "reference": "6e8d978878ae5de705ec9fabbb6011cc18776bc9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/cache/zipball/d8df2c5a3ba88430c559145bc8b944cb578f9d65",
-            "reference": "d8df2c5a3ba88430c559145bc8b944cb578f9d65",
+            "url": "https://api.github.com/repos/symfony/cache/zipball/6e8d978878ae5de705ec9fabbb6011cc18776bc9",
+            "reference": "6e8d978878ae5de705ec9fabbb6011cc18776bc9",
             "shasum": ""
         },
         "require": {
@@ -3782,7 +3782,7 @@
             "symfony/dependency-injection": "^4.4|^5.0",
             "symfony/var-dumper": "^4.4|^5.0"
         },
-        "time": "2019-11-28T14:20:16+00:00",
+        "time": "2019-12-12T13:03:32+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -4025,8 +4025,8 @@
     },
     {
         "name": "symfony/css-selector",
-        "version": "v5.0.1",
-        "version_normalized": "5.0.1.0",
+        "version": "v5.0.2",
+        "version_normalized": "5.0.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/css-selector.git",
@@ -4580,8 +4580,8 @@
     },
     {
         "name": "symfony/mime",
-        "version": "v5.0.1",
-        "version_normalized": "5.0.1.0",
+        "version": "v5.0.2",
+        "version_normalized": "5.0.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/mime.git",
@@ -5411,8 +5411,8 @@
     },
     {
         "name": "symfony/var-exporter",
-        "version": "v5.0.1",
-        "version_normalized": "5.0.1.0",
+        "version": "v5.0.2",
+        "version_normalized": "5.0.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/var-exporter.git",
