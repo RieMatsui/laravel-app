@@ -18,7 +18,7 @@
         "symfony/config": "^5.0",
         "symfony/console": "^4.4.1",
         "symfony/translation": "^4.4.1",
-        "symfony/translation-contracts": "^2.0.1"
+        "symfony/translation-contracts": "1.1.6"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
