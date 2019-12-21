@@ -353,17 +353,17 @@
     },
     {
         "name": "egulias/email-validator",
-        "version": "2.1.11",
-        "version_normalized": "2.1.11.0",
+        "version": "2.1.12",
+        "version_normalized": "2.1.12.0",
         "source": {
             "type": "git",
             "url": "https://github.com/egulias/EmailValidator.git",
-            "reference": "92dd169c32f6f55ba570c309d83f5209cefb5e23"
+            "reference": "a6255605af39f2db7f5cb62e672bd8a7bad8d208"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/92dd169c32f6f55ba570c309d83f5209cefb5e23",
-            "reference": "92dd169c32f6f55ba570c309d83f5209cefb5e23",
+            "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/a6255605af39f2db7f5cb62e672bd8a7bad8d208",
+            "reference": "a6255605af39f2db7f5cb62e672bd8a7bad8d208",
             "shasum": ""
         },
         "require": {
@@ -379,7 +379,7 @@
         "suggest": {
             "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
         },
-        "time": "2019-08-13T17:33:27+00:00",
+        "time": "2019-12-20T12:49:39+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -636,17 +636,17 @@
     },
     {
         "name": "fideloper/proxy",
-        "version": "4.2.1",
-        "version_normalized": "4.2.1.0",
+        "version": "4.2.2",
+        "version_normalized": "4.2.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/fideloper/TrustedProxy.git",
-            "reference": "03085e58ec7bee24773fa5a8850751a6e61a7e8a"
+            "reference": "790194d5d3da89a713478875d2e2d05855a90a81"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/fideloper/TrustedProxy/zipball/03085e58ec7bee24773fa5a8850751a6e61a7e8a",
-            "reference": "03085e58ec7bee24773fa5a8850751a6e61a7e8a",
+            "url": "https://api.github.com/repos/fideloper/TrustedProxy/zipball/790194d5d3da89a713478875d2e2d05855a90a81",
+            "reference": "790194d5d3da89a713478875d2e2d05855a90a81",
             "shasum": ""
         },
         "require": {
@@ -658,7 +658,7 @@
             "mockery/mockery": "^1.0",
             "phpunit/phpunit": "^6.0"
         },
-        "time": "2019-09-03T16:45:42+00:00",
+        "time": "2019-12-20T13:11:11+00:00",
         "type": "library",
         "extra": {
             "laravel": {
@@ -692,17 +692,17 @@
     },
     {
         "name": "filp/whoops",
-        "version": "2.5.0",
-        "version_normalized": "2.5.0.0",
+        "version": "2.5.1",
+        "version_normalized": "2.5.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/filp/whoops.git",
-            "reference": "cde50e6720a39fdacb240159d3eea6865d51fd96"
+            "reference": "ee9699e79d8fcdd15c107e035d7b965e4fa854ac"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/filp/whoops/zipball/cde50e6720a39fdacb240159d3eea6865d51fd96",
-            "reference": "cde50e6720a39fdacb240159d3eea6865d51fd96",
+            "url": "https://api.github.com/repos/filp/whoops/zipball/ee9699e79d8fcdd15c107e035d7b965e4fa854ac",
+            "reference": "ee9699e79d8fcdd15c107e035d7b965e4fa854ac",
             "shasum": ""
         },
         "require": {
@@ -718,7 +718,7 @@
             "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
             "whoops/soap": "Formats errors as SOAP responses"
         },
-        "time": "2019-08-07T09:00:00+00:00",
+        "time": "2019-12-21T10:00:00+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1162,17 +1162,17 @@
     },
     {
         "name": "laravel/ui",
-        "version": "v1.1.1",
-        "version_normalized": "1.1.1.0",
+        "version": "v1.1.2",
+        "version_normalized": "1.1.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/laravel/ui.git",
-            "reference": "57e2361b55ed1bc80ff0b3258b9713626fb38a2b"
+            "reference": "0287d4eee80aad718bdf7f90117cfe720c493064"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/laravel/ui/zipball/57e2361b55ed1bc80ff0b3258b9713626fb38a2b",
-            "reference": "57e2361b55ed1bc80ff0b3258b9713626fb38a2b",
+            "url": "https://api.github.com/repos/laravel/ui/zipball/0287d4eee80aad718bdf7f90117cfe720c493064",
+            "reference": "0287d4eee80aad718bdf7f90117cfe720c493064",
             "shasum": ""
         },
         "require": {
@@ -1185,11 +1185,11 @@
             "mockery/mockery": "^1.0",
             "phpunit/phpunit": "^8.0"
         },
-        "time": "2019-10-11T12:16:52+00:00",
+        "time": "2019-12-20T15:09:01+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.x-dev"
+                "dev-master": "2.x-dev"
             },
             "laravel": {
                 "providers": [
@@ -1438,17 +1438,17 @@
     },
     {
         "name": "monolog/monolog",
-        "version": "2.0.1",
-        "version_normalized": "2.0.1.0",
+        "version": "2.0.2",
+        "version_normalized": "2.0.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/Seldaek/monolog.git",
-            "reference": "f9d56fd2f5533322caccdfcddbb56aedd622ef1c"
+            "reference": "c861fcba2ca29404dc9e617eedd9eff4616986b8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f9d56fd2f5533322caccdfcddbb56aedd622ef1c",
-            "reference": "f9d56fd2f5533322caccdfcddbb56aedd622ef1c",
+            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c861fcba2ca29404dc9e617eedd9eff4616986b8",
+            "reference": "c861fcba2ca29404dc9e617eedd9eff4616986b8",
             "shasum": ""
         },
         "require": {
@@ -1487,7 +1487,7 @@
             "rollbar/rollbar": "Allow sending log messages to Rollbar",
             "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
         },
-        "time": "2019-11-13T10:27:43+00:00",
+        "time": "2019-12-20T14:22:59+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2033,17 +2033,17 @@
     },
     {
         "name": "phpdocumentor/reflection-docblock",
-        "version": "4.3.2",
-        "version_normalized": "4.3.2.0",
+        "version": "4.3.3",
+        "version_normalized": "4.3.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-            "reference": "b83ff7cfcfee7827e1e78b637a5904fe6a96698e"
+            "reference": "2ecaa9fef01634c83bfa8dc1fe35fb5cef223a62"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/b83ff7cfcfee7827e1e78b637a5904fe6a96698e",
-            "reference": "b83ff7cfcfee7827e1e78b637a5904fe6a96698e",
+            "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/2ecaa9fef01634c83bfa8dc1fe35fb5cef223a62",
+            "reference": "2ecaa9fef01634c83bfa8dc1fe35fb5cef223a62",
             "shasum": ""
         },
         "require": {
@@ -2057,7 +2057,7 @@
             "mockery/mockery": "^1.0",
             "phpunit/phpunit": "^6.4"
         },
-        "time": "2019-09-12T14:27:41+00:00",
+        "time": "2019-12-20T13:40:23+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3947,17 +3947,17 @@
     },
     {
         "name": "symfony/console",
-        "version": "v4.4.1",
-        "version_normalized": "4.4.1.0",
+        "version": "v4.4.2",
+        "version_normalized": "4.4.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/console.git",
-            "reference": "f0aea3df20d15635b3cb9730ca5eea1c65b7f201"
+            "reference": "82437719dab1e6bdd28726af14cb345c2ec816d0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/console/zipball/f0aea3df20d15635b3cb9730ca5eea1c65b7f201",
-            "reference": "f0aea3df20d15635b3cb9730ca5eea1c65b7f201",
+            "url": "https://api.github.com/repos/symfony/console/zipball/82437719dab1e6bdd28726af14cb345c2ec816d0",
+            "reference": "82437719dab1e6bdd28726af14cb345c2ec816d0",
             "shasum": ""
         },
         "require": {
@@ -3990,7 +3990,7 @@
             "symfony/lock": "",
             "symfony/process": ""
         },
-        "time": "2019-12-01T10:06:17+00:00",
+        "time": "2019-12-17T10:32:23+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
