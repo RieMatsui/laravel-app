@@ -1,8 +1,8 @@
 @extends('layout')
 
 @section('content')
-    <div class="container">
-        <div class="row">
+<div class="container">
+    <div class="row">
             <div class="col offset-md-3 col-md-6">
                 <nav class="card">
                     <div class="card-header">
