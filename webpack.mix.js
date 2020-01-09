@@ -11,5 +11,11 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+mix.js('resources/assets/js/app.js', 'public/js/app.js')
+   .js('resources/assets/js/bootstrap.js', 'public/js/bootstrap.js')
+   .js('resources/assets/js/logout.js', 'public/js/logout.js')
+   .js('resources/assets/js/task.js', 'public/js/task.js')
+   .sass('resources/assets/scss/app.scss', 'public/css/app.css')
+   .sass('resources/assets/scss/reset.scss', 'public/css/reset.css')
+   .sass('resources/assets/scss/style.scss', 'public/css/style.css')
+   ;

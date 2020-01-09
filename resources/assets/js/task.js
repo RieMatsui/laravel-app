@@ -3,3 +3,5 @@ flatpickr(document.getElementById('due_date'), {
   dateFormat: "Y/m/d",
   minDate: new Date()
 });
+
+

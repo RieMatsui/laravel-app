@@ -1,8 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Sacramento);@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
 
 body {
   background-color: #f4f7f8;
-  font-family: "Yu Gothic", "\6E38\30B4\30B7\30C3\30AF", YuGothic, "\6E38\30B4\30B7\30C3\30AF\4F53";
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
 }
 
 .folder-button {
@@ -18,18 +18,14 @@ a:hover {
 }
 
 .my-navbar {
-  -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   background: #333;
-  display: -webkit-box;
   display: flex;
   height: 3rem;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 0 2%;
   margin-bottom: 3rem;
 }
-
 .my-navbar-brand {
   font-size: 18px;
 }
@@ -54,4 +50,3 @@ a:hover {
 .logout {
   display: none;
 }
-

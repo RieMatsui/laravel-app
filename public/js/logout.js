@@ -81,34 +81,33 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/assets/js/task.js":
-/*!*************************************!*\
-  !*** ./resources/assets/js/task.js ***!
-  \*************************************/
+/***/ "./resources/assets/js/logout.js":
+/*!***************************************!*\
+  !*** ./resources/assets/js/logout.js ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-flatpickr(document.getElementById('due_date'), {
-  locale: 'ja',
-  dateFormat: "Y/m/d",
-  minDate: new Date()
+document.getElementById('logout').addEventListener('click', function (event) {
+  event.preventDefault();
+  document.getElementById('logout_form').submit();
 });
 
 /***/ }),
 
-/***/ 3:
-/*!*******************************************!*\
-  !*** multi ./resources/assets/js/task.js ***!
-  \*******************************************/
+/***/ 2:
+/*!*********************************************!*\
+  !*** multi ./resources/assets/js/logout.js ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/matsuirie/Documents/PHPProjects/laravel-app/resources/assets/js/task.js */"./resources/assets/js/task.js");
+module.exports = __webpack_require__(/*! /Users/matsuirie/Documents/PHPProjects/laravel-app/resources/assets/js/logout.js */"./resources/assets/js/logout.js");
 
 
 /***/ })
