@@ -1,9 +1,9 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css",
-    "/css/reset.css": "/css/reset.css",
-    "/css/style.css": "/css/style.css",
-    "/js/bootstrap.js": "/js/bootstrap.js",
-    "/js/logout.js": "/js/logout.js",
-    "/js/task.js": "/js/task.js"
+    "/assets/js/app.js": "/assets/js/app.js",
+    "/assets/css/app.css": "/assets/css/app.css",
+    "/assets/css/reset.css": "/assets/css/reset.css",
+    "/assets/css/style.css": "/assets/css/style.css",
+    "/assets/js/bootstrap.js": "/assets/js/bootstrap.js",
+    "/assets/js/logout.js": "/assets/js/logout.js",
+    "/assets/js/task.js": "/assets/js/task.js"
 }

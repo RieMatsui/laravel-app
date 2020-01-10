@@ -36,10 +36,10 @@
           <table class="table">
             <thead>
                 <tr>
-                    <th>タイトル</th>
-                    <th>状態</th>
-                    <th>期限</th>
-                    <th></th>
+                  <th>タイトル</th>
+                  <th>状態</th>
+                  <th>期限</th>
+                  <th></th>
                 </tr>
             </thead>
 
