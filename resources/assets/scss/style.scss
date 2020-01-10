@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Sacramento');
-
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
 
 body {
   background-color: #f4f7f8;
-  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
 }
 
 .folder-button {
   text-align: center;
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
 }
 
@@ -48,4 +47,6 @@ a:hover{
   width: 1px;
 }
 
-
+.logout {
+  display: none;
+}
