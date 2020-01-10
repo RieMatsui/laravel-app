@@ -1,4 +1,9 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/assets/js/app.js": "/assets/js/app.js",
+    "/assets/css/app.css": "/assets/css/app.css",
+    "/assets/css/reset.css": "/assets/css/reset.css",
+    "/assets/css/style.css": "/assets/css/style.css",
+    "/assets/js/bootstrap.js": "/assets/js/bootstrap.js",
+    "/assets/js/logout.js": "/assets/js/logout.js",
+    "/assets/js/task.js": "/assets/js/task.js"
 }

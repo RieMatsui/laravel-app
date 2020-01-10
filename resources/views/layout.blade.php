@@ -6,11 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>ToDo App</title>
-  @yield('styles')
-  <script src="/js/app.js"></script>
-  <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/app.css">
-  <link rel="stylesheet" href="/css/style.css">
+  @include('share.flatpickr.styles')
 </head>
 
 <body>
@@ -24,40 +20,44 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!-- Left Side Of Navbar -->
-        <ul class="navbar-nav mr-auto">
-        </ul>
+        <ul class="navbar-nav mr-auto"></ul>
         <!-- Right Side Of Navbar -->
         <ul class="navbar-nav ml-auto">
+
           <!-- Authentication Links -->
           @if(Auth::check())
           <li class="nav-item">
-            <span href="#" id="logout" class="nav-link">
-              ようこそ、 {{ Auth::user() -> name }}さん
-            </span>
+            <span href="#" id="login_user_name" class="nav-link">ようこそ、 {{ Auth::user() -> name }}さん</span>
           </li>
           <li class="nav-item">
-            <a href="#" id="logout" class="nav-link">
-              Logout
-            </a>
-          <li>
-          <form id="logout-form" class="logout" action="{{ route('logout') }}" method="POST">
+            <a href="#" id="logout" class="nav-link">Logout</a>
+          </li>
+          <form id="logout_form" class="logout" action="{{ route('logout') }}" method="POST" style="display:none">
             @csrf
           </form>
           @else
+
           <li class="nav-item">
             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
           </li>
           @endif
+
         </ul>
       </div>
     </nav>
   </header>
+
   <main>
     @yield('content')
   </main>
+  @if(Auth::check())
+  <script src="{{asset('/assets/js/logout.js')}}"></script>
+  @endif
+
   @yield('scripts')
 </body>
 
