@@ -20,7 +20,7 @@
         <form action="{{ route('folders.create')  }}" method="post">
           @csrf
           <div class="form-group">
-            <label for="tile">フォルダ名</label>
+            <label class="label-form" for="tile">フォルダ名</label>
             <input type="text" class="form-control" name="title" id="title" value="{{ old ('title') }}" />
           </div>
           <div class="text-right">

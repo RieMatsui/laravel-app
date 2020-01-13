@@ -22,12 +22,12 @@
           <form action="{{ route('tasks.create', ['id' => $folder_id])  }}" method="POST">
             @csrf
             <div class="form-group">
-              <label for="title">タイトル</label>
+              <label class="label-form" for="title">タイトル</label>
               <input type="text" class="form-control" name="title" id="title" value="{{ old('title') }}" />
             </div>
 
             <div class="form-group">
-              <label for="due_date">期限</label>
+              <label class="label-form" for="due_date">期限</label>
               <flat-pickr name="due_date" id="due_date" v-model="date" :config="config" class="form-control"
                 placeholder="Select date" value="{{ old('due_date') }}">
               </flat-pickr>
