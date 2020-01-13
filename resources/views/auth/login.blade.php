@@ -47,8 +47,8 @@
             <div class="form-group row">
               <div class="col-md-6 offset-md-4">
                 <!-- Remember Me -->
-                <div class="form-check float-left">
-                  <input class="form-check-input" type="checkbox" name="remember" id="remember"
+                <div class="form-check">
+                  <input class="form-check-input check-form" type="checkbox" name="remember" id="remember"
                     {{ old('remember') ? 'checked' : '' }}>
                   <label class="form-check-label" for="remember">
                     {{ __('次回から自動的にログイン') }}
