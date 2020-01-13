@@ -28,7 +28,9 @@
 
             <div class="form-group">
               <label for="due_date">期限</label>
-              <input type="text" class="form-control" name="due_date" id="due_date" value="{{ old('due_date') }}" />
+              <flat-pickr name="due_date" id="due_date" v-model="date" :config="config" class="form-control"
+                placeholder="Select date" value="{{ old('due_date') }}">
+              </flat-pickr>
             </div>
 
             <div class="text-right">
