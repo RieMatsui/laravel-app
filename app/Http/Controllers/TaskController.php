@@ -103,7 +103,7 @@ class TaskController extends Controller
     }
 
     /**
-     * Undocumented function
+     * check relate folder to task.
      *
      * @param Folder $folder
      * @param Task $task
