@@ -7,57 +7,60 @@ use App\Http\Requests\EditTask;
 use App\Folder;
 use App\Task;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\Request;
 
 class TaskController extends Controller
 {
-    public function index(int $id)
+
+    /**
+     * task list
+     *
+     * @param Folder $folder
+     * @return \Illuminate\View\View
+     */
+    public function index(Folder $folder)
     {
         // get all folder
         $folders = Auth::user()->folders()->get();
-        //get current folder
-        $current_folder = Folder::find($id);
+
         //get task on current folder
-        $tasks = $current_folder->tasks()->get();
+        $tasks = $folder->tasks()->get();
 
         return view('tasks/index', [
             'folders' => $folders,
-            'current_folder_id' => $current_folder->id,
+            'current_folder_id' => $folder->id,
             'tasks' => $tasks,
         ]);
     }
     /**
-     *  show input form by folder id
+     * show task make form
      *
-     * @param integer $id
-     * @return void
+     * @param Folder $folder
+     * @return \Illuminate\View\View
      */
-    public function showCreateForm(int $id)
+    public function showCreateForm(Folder $folder)
     {
         return view('tasks/create', [
-            'folder_id' => $id
+            'folder_id' => $folder->id
         ]);
     }
+
     /**
      * function creating task.
      *
-     * @param integer $id
+     * @param Folder $folder
      * @param CreateTask $request
-     * @return void current_folder_id
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function create(int $id, CreateTask $request)
+    public function create(Folder $folder, CreateTask $request)
     {
-
-        $current_folder = Folder::find($id);
-
         $task = new Task();
         $task->title = $request->title;
         $task->due_date = $request->due_date;
 
-        $current_folder->tasks()->save($task);
+        $folder->tasks()->save($task);
 
         return redirect()->route('tasks.index', [
-            'id' => $current_folder->id,
+            'id' => $folder->id,
         ]);
     }
     /**
@@ -65,22 +68,25 @@ class TaskController extends Controller
      *
      * @param integer $id
      * @param integer $task_id
-     * @return void
+     * @return \Illuminate\View\View
      */
-    public function showEditForm(int $id, int $task_id)
+    public function showEditForm(Folder $folder, Task $task)
     {
-        $task = Task::find($task_id);
-
         return view('tasks/edit', [
             'task' => $task,
         ]);
     }
 
-    public function edit(int $id, int $task_id, EditTask $request)
+    /**
+     * edit task
+     *
+     * @param Folder $folder
+     * @param Task $task
+     * @param EditTask $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function edit(Folder $folder, Task $task, EditTask $request)
     {
-
-        $task = Task::find($task_id);
-
         $task->title = $request->title;
         $task->status = $request->status;
         $task->due_date = $request->due_date;
