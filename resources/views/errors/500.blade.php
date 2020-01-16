@@ -1,5 +1,16 @@
-@extends('errors::minimal')
+@extends('layout')
 
-@section('title', __('Server Error'))
-@section('code', '500')
-@section('message', __('Server Error'))
+@section('content')
+<div class="container">
+  <div class="row">
+    <div class="col offset-3 col-md-6">
+      <div class="text-center">
+        <p>システムエラーが発生してました。</p>
+        <a href="{{ route('home') }}" class="btn">
+          ホームへ戻る
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+@endsection

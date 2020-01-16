@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use APP\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+
 
 class HomeController extends Controller
 {
@@ -34,7 +36,6 @@ class HomeController extends Controller
             return view('home');
         }
 
-        // If there is a folder, redirect to the task list of that folder
         return redirect()->route('tasks.index', [
             'id' => $folder->id,
         ]);
