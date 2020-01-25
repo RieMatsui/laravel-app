@@ -1,5 +1,16 @@
-@extends('errors::minimal')
+@extends('layout')
 
-@section('title', __('Forbidden'))
-@section('code', '403')
-@section('message', __($exception->getMessage() ?: 'Forbidden'))
+@section('content')
+<div class="container">
+  <div class="row">
+    <div class="col offset-3 col-md-6">
+      <div class="text-center">
+        <p>お探しのページにアクセスする権限がありません。</p>
+        <a href="{{ route('home') }}" class="btn">
+          ホームに戻る
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+@endsection

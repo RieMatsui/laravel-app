@@ -25,8 +25,6 @@ class FolderController extends Controller
         // save linked to user
         Auth::user()->folders()->save($folder);
 
-        //インスタンスの状態をデータベースに書き込む
-        $folder->save();
         return redirect()->route('tasks.index', [
             'id' => $folder->id,
         ]);
