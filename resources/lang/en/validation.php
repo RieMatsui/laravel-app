@@ -132,6 +132,7 @@ return [
     'custom' => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
+            'due_date.after_or_equal' => 'The :attribute must be a date before or equal to :date.',
         ],
     ],
 
@@ -146,6 +147,12 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'email' => 'E-Mail Address',
+        'password' => 'Password',
+        'token' => 'Token',
+        'title' => 'Title',
+        'due-date' => 'Due Date',
+    ],
 
 ];
