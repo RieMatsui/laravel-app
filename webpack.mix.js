@@ -12,10 +12,10 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/assets/js/app.js')
-   .js('resources/assets/js/bootstrap.js', 'public/assets/js/bootstrap.js')
-   .js('resources/assets/js/logout.js', 'public/assets/js/logout.js')
-   .js('resources/assets/js/task.js', 'public/assets/js/task.js')
-   .sass('resources/assets/scss/app.scss', 'public/assets/css/app.css')
-   .sass('resources/assets/scss/reset.scss', 'public/assets/css/reset.css')
-   .sass('resources/assets/scss/style.scss', 'public/assets/css/style.css')
-   ;
+    .js('resources/assets/js/bootstrap.js', 'public/assets/js/bootstrap.js')
+    .js('resources/assets/js/logout.js', 'public/assets/js/logout.js')
+    .js('resources/assets/js/task.js', 'public/assets/js/task.js')
+    .sass('resources/assets/scss/app.scss', 'public/assets/css/app.css')
+    .sass('resources/assets/scss/reset.scss', 'public/assets/css/reset.css')
+    .sass('resources/assets/scss/style.scss', 'public/assets/css/style.css')
+    ;
