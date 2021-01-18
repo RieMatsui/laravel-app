@@ -22,9 +22,9 @@ class FolderController extends Controller
         $folder = new Folder();
         // substitute input for title
         $folder->title = $request->title;
-        // save linked to user
-        Auth::user()->folders()->save($folder);
-
+        //インスタンスの状態をデータベースに書き込む
+        $folder->user_id = Auth::id();
+        $folder->save();
         return redirect()->route('tasks.index', [
             'id' => $folder->id,
         ]);
