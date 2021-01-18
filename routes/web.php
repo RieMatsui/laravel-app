@@ -25,3 +25,4 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/folders/{id}/tasks/{task_id}/edit', 'TaskController@edit');
 });
 Auth::routes();
+Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'LanguageController@switchLang']);

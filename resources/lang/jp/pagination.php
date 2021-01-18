@@ -14,6 +14,6 @@ return [
     */
 
     'previous' => '&laquo; 戻る',
-    '次へ' => 'Next &raquo;',
+    'next' => '次へ &raquo;',
 
 ];
