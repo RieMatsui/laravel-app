@@ -16,59 +16,59 @@ class TaskTest extends TestCase
      * First run before each test.
      *
      */
-    public function setUp(): void
-    {
-        parent::setUp();
+    // public function setUp(): void
+    // {
+    //     parent::setUp();
 
-        // create folder data befor exec test case.
-        $this->seed('FoldersTableSeeder');
-    }
+    //     // create folder data befor exec test case.
+    //     $this->seed('FoldersTableSeeder');
+    // }
 
-    /**
-     * A basic feature test example.
-     *
-     * @return void
-     */
-    public function test_due_date_should_be_date()
-    {
-        $response = $this->post('/folders/1/tasks/create', [
-            'title' => 'Sample task',
-            'due_date' => 123, // Invalid data
-        ]);
+    // /**
+    //  * A basic feature test example.
+    //  *
+    //  * @return void
+    //  */
+    // public function test_due_date_should_be_date()
+    // {
+    //     $response = $this->post('/folders/1/tasks/create', [
+    //         'title' => 'Sample task',
+    //         'due_date' => 123, // Invalid data
+    //     ]);
 
-        $response->assertSessionHasErrors([
-            'due_date' => '期限日 には日付を入力してください。'
-        ]);
-    }
+    //     $response->assertSessionHasErrors([
+    //         'due_date' => '期限日 には日付を入力してください。'
+    //     ]);
+    // }
 
-    /**
-     * check error message when due_date is past
-     *
-     * @return void
-     */
-    public function test_due_date_should_not_be_past()
-    {
-        $response = $this->post('/folders/1/tasks/create', [
-            'title' => 'Sample task',
-            'due_date' => Carbon::yesterday()->format('Y/m/d'),
-        ]);
+    // /**
+    //  * check error message when due_date is past
+    //  *
+    //  * @return void
+    //  */
+    // public function test_due_date_should_not_be_past()
+    // {
+    //     $response = $this->post('/folders/1/tasks/create', [
+    //         'title' => 'Sample task',
+    //         'due_date' => Carbon::yesterday()->format('Y/m/d'),
+    //     ]);
 
-        $response->assertSessionHasErrors([
-            'due_date' => '期限日 には今日以降の日付を入力してください。',
-        ]);
-    }
-    public function test_status_should_be_within_defined_numbers()
-    {
-        Schema::disableForeignKeyConstraints();
-        $this->seed('TasksTableSeeder');
-        Schema::enableForeignKeyConstraints();
-        $response = $this->post('/folders/1/tasks/1/edit', [
-            'title' => 'Sample task',
-            'due_date' => Carbon::today()->format('Y/m/d'),
-            'status' => 999,
-        ]);
-        $response->assertSessionHasErrors([
-            'status' => '状態 には 未着手、着手中、完了 のいずれかを指定してください。',
-        ]);
-    }
+    //     $response->assertSessionHasErrors([
+    //         'due_date' => '期限日 には今日以降の日付を入力してください。',
+    //     ]);
+    // }
+    // public function test_status_should_be_within_defined_numbers()
+    // {
+    //     Schema::disableForeignKeyConstraints();
+    //     $this->seed('TasksTableSeeder');
+    //     Schema::enableForeignKeyConstraints();
+    //     $response = $this->post('/folders/1/tasks/1/edit', [
+    //         'title' => 'Sample task',
+    //         'due_date' => Carbon::today()->format('Y/m/d'),
+    //         'status' => 999,
+    //     ]);
+    //     $response->assertSessionHasErrors([
+    //         'status' => '状態 には 未着手、着手中、完了 のいずれかを指定してください。',
+    //     ]);
+    // }
 }
