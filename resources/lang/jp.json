@@ -1,0 +1,23 @@
+{
+    "Login": "ログイン",
+    "E-Mail Address": "メールアドレス",
+    "Password": "パスワード",
+    "Remember Me": "次回から自動的にログイン",
+    "Send": "送信",
+    "Forgot Your Password?": "パスワードをお忘れですか?",
+    "Register": "会員登録",
+    "Name": "名前",
+    "Confirm Password": "パスワード(確認)",
+    "Logout": "ログアウト",
+    "Folder": "フォルダ",
+    "Welcome": "ようこそ、",
+    "User": " さん",
+    "Add Folder": "フォルダを追加する",
+    "Task": "タスク",
+    "Add Task": "タスクを追加する",
+    "Title": "タイトル",
+    "Status": "状態",
+    "Limit": "期限",
+    "Edit": "編集",
+    "Folder Name": "フォルダ名"
+}

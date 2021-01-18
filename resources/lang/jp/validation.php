@@ -132,6 +132,7 @@ return [
     'custom' => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
+            'due_date.after_or_equal' => ':attribute には今日以降の日付を入力してください。',
         ],
     ],
 
@@ -146,6 +147,12 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'email' => 'メールアドレス',
+        'password' => 'パスワード',
+        'token' => 'トークン',
+        'title' => 'タイトル',
+        'due-date' => '期限日',
+    ],
 
 ];

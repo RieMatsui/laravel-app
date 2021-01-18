@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col offset-md-3 col-md-6">
             <nav class="card">
-                <div class="card-header">タスクを追加する</div>
+                <div class="card-header">{{ __('messages.add-task') }}</div>
                 <div class="card-body">
                     @if($errors -> any())
                     <div class="list-group-item list-group-item-danger">
@@ -18,22 +18,27 @@
                         @endforeach
                     </div>
                     @endif
+
                     <form action="{{ route('tasks.create', ['id' => $folder_id])  }}" method="POST">
                         @csrf
                         <div class="form-group">
-                            <label for="title">タイトル</label>
-                            <input typoe="text" class="form-control" name="title" id="title"
+                            <label class="label-form" for="title">{{__('messages.title')}}</label>
+                            <input type="text" class="form-control" name="title" id="title"
                                 value="{{ old('title') }}" />
                         </div>
+
                         <div class="form-group">
-                            <label for="due_date">期限</label>
-                            <input type="text" class="form-control" name="due_date" id="due_date"
-                                value="{{ old('due_date') }}" />
+                            <label class="label-form" for="due_date">{{ __('messages.limit') }}</label>
+                            <flat-pickr name="due_date" id="due_date" v-model="date" :config="config"
+                                class="form-control" placeholder="Select date" value="{{ old('due_date') }}">
+                            </flat-pickr>
                         </div>
+
                         <div class="text-right">
-                            <button type="submit" class="btn btn-primary">送信</button>
+                            <button type="submit" class="btn btn-primary">{{ __('messages.send') }}</button>
                         </div>
                     </form>
+
                 </div>
             </nav>
         </div>

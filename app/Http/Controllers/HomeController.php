@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use APP\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class HomeController extends Controller
 {
@@ -23,6 +26,18 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        // get login user
+        $user = Auth::user();
+
+        $folder = $user->folders()->first();
+
+        // respond to homepage if there is no folder yet
+        if (is_null($folder)) {
+            return view('home');
+        }
+
+        return redirect()->route('tasks.index', [
+            'id' => $folder->id,
+        ]);
     }
 }
