@@ -14,9 +14,9 @@ const app = new Vue({
             config: {
                 wrap: true, // set wrap to true only when using 'input-group'
                 altInput: true,
-                altFormat: "yy/m/d",
+                altFormat: "Y/m/d",
                 locale: Japanese,
-                minDate: 'today' // locale for this instance only
+                minDate: 'today' // locale for this instance onlys
             },
         }
     },

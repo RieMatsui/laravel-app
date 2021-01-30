@@ -15950,9 +15950,9 @@ var app = new Vue({
         wrap: true,
         // set wrap to true only when using 'input-group'
         altInput: true,
-        altFormat: "yy/m/d",
+        altFormat: "Y/m/d",
         locale: flatpickr_dist_l10n_ja__WEBPACK_IMPORTED_MODULE_1__["Japanese"],
-        minDate: 'today' // locale for this instance only
+        minDate: 'today' // locale for this instance onlys
 
       }
     };
@@ -15971,7 +15971,7 @@ var app = new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/matsuirie/Documents/PHPProjects/laravel-app/resources/assets/js/task.js */"./resources/assets/js/task.js");
+module.exports = __webpack_require__(/*! /Users/matsuirie/Documents/git/laravel-app/resources/assets/js/task.js */"./resources/assets/js/task.js");
 
 
 /***/ })
