@@ -107,7 +107,7 @@ document.getElementById('logout').addEventListener('click', function (event) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/matsuirie/Documents/PHPProjects/laravel-app/resources/assets/js/logout.js */"./resources/assets/js/logout.js");
+module.exports = __webpack_require__(/*! /Users/matsuirie/Documents/git/laravel-app/resources/assets/js/logout.js */"./resources/assets/js/logout.js");
 
 
 /***/ })
