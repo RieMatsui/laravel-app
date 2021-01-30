@@ -15952,7 +15952,7 @@ var app = new Vue({
         altInput: true,
         altFormat: "Y/m/d",
         locale: flatpickr_dist_l10n_ja__WEBPACK_IMPORTED_MODULE_1__["Japanese"],
-        minDate: 'today' // locale for this instance onlys
+        minDate: 'today' // locale for this instance only
 
       }
     };

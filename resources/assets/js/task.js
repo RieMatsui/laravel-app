@@ -16,7 +16,7 @@ const app = new Vue({
                 altInput: true,
                 altFormat: "Y/m/d",
                 locale: Japanese,
-                minDate: 'today' // locale for this instance onlys
+                minDate: 'today' // locale for this instance only
             },
         }
     },
