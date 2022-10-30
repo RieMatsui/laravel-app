@@ -28,7 +28,7 @@
         "webpack-dev-server": "^3.10.1"
     },
     "dependencies": {
-        "browser-sync": "^2.26.7",
+        "browser-sync": "^2.27.10",
         "vue-flatpickr-component": "^8.1.5",
         "vue-loader": "^15.8.3"
     }
